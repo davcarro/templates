@@ -1,19 +1,18 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Transform: 'AWS::Include'
 Description: High Availability Architecture
 
 Resources:
   VpcStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: 'https://github.com/davcarro/templates/vpc.yaml'
+      TemplateURL: 'https://raw.githubusercontent.com/davcarro/templates/main/vpc.yaml'
 
   SecurityGroupsStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: 'https://github.com/davcarro/templates/security-groups.yaml'
+      TemplateURL: 'https://raw.githubusercontent.com/davcarro/templates/main/security-groups.yaml'
 
   ApplicationStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: 'https://github.com/davcarro/templates/application.yaml'
+      TemplateURL: 'https://raw.githubusercontent.com/davcarro/templates/main/application.yaml'
