@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Include'
+Description: High Availability Architecture
+
+Resources:
+  VpcStack:
+    Type: 'AWS::CloudFormation::Stack'
+    Properties:
+      TemplateURL: 'https://raw.githubusercontent.com/username/repo/main/vpc.yaml'
+
+  SecurityGroupsStack:
+    Type: 'AWS::CloudFormation::Stack'
+    Properties:
+      TemplateURL: 'https://raw.githubusercontent.com/username/repo/main/security-groups.yaml'
+
+  ApplicationStack:
+    Type: 'AWS::CloudFormation::Stack'
+    Properties:
+      TemplateURL: 'https://raw.githubusercontent.com/username/repo/main/application.yaml'
