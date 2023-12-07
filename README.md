@@ -34,3 +34,4 @@
 ```bash
 aws cloudformation create-stack --stack-name V3 --template-body file://master.yaml --region us-east-1 --capabilities CAPABILITY_AUTO_EXPAND
 ```
+
