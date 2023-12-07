@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.7
+      python: 3.9
 
   pre_build:
     commands:
@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "Entering build phase"
       - aws cloudformation create-stack --stack-name mystack --template-body file://master.yaml --region us-east-1
-      
+
 
   post_build:
     commands:
