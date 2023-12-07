@@ -6,14 +6,14 @@ Resources:
   VpcStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: 'https://raw.githubusercontent.com/username/repo/main/vpc.yaml'
+      TemplateURL: 'https://github.com/davcarro/templates/vpc.yaml'
 
   SecurityGroupsStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: 'https://raw.githubusercontent.com/username/repo/main/security-groups.yaml'
+      TemplateURL: 'https://github.com/davcarro/templates/security-groups.yaml'
 
   ApplicationStack:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
-      TemplateURL: 'https://raw.githubusercontent.com/username/repo/main/application.yaml'
+      TemplateURL: 'https://github.com/davcarro/templates/application.yaml'
